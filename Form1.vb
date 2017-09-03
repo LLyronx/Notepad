@@ -3,13 +3,16 @@
 
     Dim hasSaved As Boolean = True
     Dim neverSaved As Boolean = True
+    Dim filetitle As String = "无标题"
     Dim filename As String = "无标题"
     Public Const programname As String = "记事本"
     Dim updistance As Integer = 65
     Dim leftdistance As Integer = 15
 
     Dim cliped As String
-    Dim lastdo As String
+    Dim lastdo As String = ""
+    Dim laststate As Integer = 1
+    Dim lastundosave As String = ""
 
     Dim nowfont As Font
 
@@ -24,8 +27,9 @@
 
     Private Sub updateall()
         updatestatuslist()
-
-        Me.Text = filename + " - " + programname
+        OpenFileDialog.FileName = ""
+        SaveFileDialog.FileName = filetitle
+        Me.Text = filetitle + " - " + programname
 
         If texts.SelectedText = "" Then
             CutItem.Enabled = False
@@ -57,11 +61,12 @@
 
     Private Function AskIfSave() As Boolean
         Dim temp As Integer
-        temp = MsgBox("文件" + filename + "已更改，是否保存？", 48 + 3, programname)
+        temp = MsgBox("文件" + filetitle + "已更改，是否保存？", 48 + 3, programname)
         If temp = 6 Then
             If neverSaved = True Then
                 If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
                     filename = SaveFileDialog.FileName
+                    filetitle = split(filename, "\")(Ubound(split(filename, "\")))
                     savefile()
                 Else
                     Return False
@@ -96,7 +101,7 @@
         FileClose(filenum)
         neverSaved = False
         updateall()
-
+        laststate = 0
     End Sub
 
     Public Sub New()
@@ -107,10 +112,8 @@
         Me.KeyPreview = True
 
         OpenFileDialog.Multiselect = False
-        OpenFileDialog.FileName = ""
         OpenFileDialog.Filter = "Document files(*.txt) | *.txt|Configure files(*.inf *.ini)|*.inf;*.ini|All Files(*.*)|*.*"
 
-        SaveFileDialog.FileName = "*.txt"
         SaveFileDialog.Filter = "Document files(*.txt) | *.txt|Configure files(*.inf *.ini)|*.inf;*.ini|All Files(*.*)|*.*"
 
         updateall()
@@ -133,9 +136,14 @@
         TextboxRepaint()
     End Sub
 
-    Private Sub texts_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles texts.KeyPress
+    Private Sub texts_KeyDown(sender As Object, e As KeyEventArgs) Handles texts.KeyDown
         updatestatuslist()
     End Sub
+
+    Private Sub texts_KeyUp(sender As Object, e As KeyEventArgs) Handles texts.KeyUp
+        updatestatuslist()
+    End Sub
+
 
     Private Sub texts_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles texts.MouseClick
         updatestatuslist()
@@ -144,6 +152,19 @@
     Private Sub texts_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles texts.TextChanged
         hasSaved = False
         Form2.nowis = 1
+        Dim nowstate As Integer
+        If Len(texts.Text) - Len(lastdo) > 0 Then
+            nowstate = 1
+        ElseIf Len(texts.Text) - Len(lastdo) = 0 Then
+            nowstate = 2
+        Else
+            nowstate = 3
+        End If
+        If nowstate <> laststate Then
+            lastundosave = lastdo
+        End If
+        lastdo = texts.Text
+        laststate = nowstate
     End Sub
 
     '下面是“文件”菜单的各项
@@ -153,22 +174,29 @@
                 texts.Text = ""
                 hasSaved = True
                 neverSaved = True
+                filename = "无标题"
+                filetitle = "无标题"
             End If
         Else
             texts.Text = ""
             hasSaved = True
             neverSaved = True
+            filename = "无标题"
+            filetitle = "无标题"
         End If
+        updateall()
     End Sub
     Private Sub OpenItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenItem.Click
         If (OpenFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK) Then
             If hasSaved = False Then
                 If (AskIfSave() = True) Then
                     filename = OpenFileDialog.FileName
+                    filetitle = split(filename, "\")(Ubound(split(filename, "\")))
                     openfile()
                 End If
             Else
                 filename = OpenFileDialog.FileName
+                filetitle = split(filename, "\")(Ubound(split(filename, "\")))
                 openfile()
             End If
         End If
@@ -178,6 +206,7 @@
         If neverSaved = True Then
             If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
                 filename = SaveFileDialog.FileName
+                filetitle = split(filename, "\")(Ubound(split(filename, "\")))
                 savefile()
             End If
         Else
@@ -188,6 +217,7 @@
     Private Sub OtherSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OtherSaveItem.Click
         If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
             filename = SaveFileDialog.FileName
+            filetitle = split(filename, "\")(Ubound(split(filename, "\")))
             savefile()
         End If
     End Sub
@@ -216,6 +246,11 @@
     '下面是“编辑”菜单的各项
 
     Private Sub UndoItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UndoItem.Click
+        Dim temp As String = texts.Text
+        texts.Text = lastundosave
+        lastundosave = temp
+        lastdo = texts.Text
+        laststate = 0
 
     End Sub
 
@@ -316,7 +351,7 @@
     End Sub
 
     Private Sub AboutItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutItem.Click
-        MsgBox("感谢使用 记事本 软件" + vbCrLf + vbCrLf + "Powered By NorthBank HighSpeedCalculate Lab", 64, "Version 1.0.1")
+        About.ShowDialog()
     End Sub
 
 End Class

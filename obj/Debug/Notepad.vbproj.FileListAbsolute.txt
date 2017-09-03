@@ -22,3 +22,18 @@ C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects
 C:\Users\User\Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Debug\Notepad.Form2.resources
 C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Debug\Notepad.Form3.resources
 E:\Notepad\Notepad\obj\Debug\Notepad.xml
+D:\Notepad 记事本项目\Notepad\obj\Debug\Notepad.exe
+D:\Notepad 记事本项目\Notepad\obj\Debug\Notepad.xml
+D:\Notepad 记事本项目\Notepad\obj\Debug\Notepad.pdb
+C:\Users\Pentium\Desktop\Notepad\bin\Debug\Notepad.exe
+C:\Users\Pentium\Desktop\Notepad\bin\Debug\Notepad.pdb
+C:\Users\Pentium\Desktop\Notepad\bin\Debug\Notepad.xml
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.Form1.resources
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.Form2.resources
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.Form3.resources
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.Resources.resources
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.vbproj.GenerateResource.Cache
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.exe
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.xml
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.pdb
+C:\Users\Pentium\Desktop\Notepad\obj\Debug\Notepad.About.resources

@@ -22,15 +22,15 @@ Partial Class Form3
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.source = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.desc = New System.Windows.Forms.TextBox
-        Me.Rep = New System.Windows.Forms.Button
-        Me.FindNext = New System.Windows.Forms.Button
-        Me.RepAll = New System.Windows.Forms.Button
-        Me.CapGet = New System.Windows.Forms.CheckBox
-        Me.Cancel = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.source = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.desc = New System.Windows.Forms.TextBox()
+        Me.Rep = New System.Windows.Forms.Button()
+        Me.FindNext = New System.Windows.Forms.Button()
+        Me.RepAll = New System.Windows.Forms.Button()
+        Me.CapGet = New System.Windows.Forms.CheckBox()
+        Me.Cancel = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -116,6 +116,7 @@ Partial Class Form3
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(292, 266)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.CapGet)
         Me.Controls.Add(Me.FindNext)
@@ -125,6 +126,10 @@ Partial Class Form3
         Me.Controls.Add(Me.source)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.ForeColor = System.Drawing.Color.Coral
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form3"
         Me.Text = "替换"
         Me.ResumeLayout(False)

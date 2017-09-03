@@ -22,14 +22,14 @@ Partial Class Form2
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GetNext = New System.Windows.Forms.Button
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.FindBox = New System.Windows.Forms.TextBox
-        Me.CapGet = New System.Windows.Forms.CheckBox
-        Me.Range = New System.Windows.Forms.GroupBox
-        Me.SelectedBox = New System.Windows.Forms.RadioButton
-        Me.AllBox = New System.Windows.Forms.RadioButton
-        Me.CancelBox = New System.Windows.Forms.Button
+        Me.GetNext = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.FindBox = New System.Windows.Forms.TextBox()
+        Me.CapGet = New System.Windows.Forms.CheckBox()
+        Me.Range = New System.Windows.Forms.GroupBox()
+        Me.SelectedBox = New System.Windows.Forms.RadioButton()
+        Me.AllBox = New System.Windows.Forms.RadioButton()
+        Me.CancelBox = New System.Windows.Forms.Button()
         Me.Range.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -125,6 +125,7 @@ Partial Class Form2
         Me.Controls.Add(Me.FindBox)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GetNext)
+        Me.ForeColor = System.Drawing.Color.DarkOrchid
         Me.Name = "Form2"
         Me.Text = "查找"
         Me.Range.ResumeLayout(False)
