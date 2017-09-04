@@ -26,6 +26,7 @@
         Else
             result = 0
         End If
+        Form1.Focus()
     End Sub
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
@@ -46,6 +47,7 @@
             If a = 1 Then
                 Form1.texts.SelectedText = desc.Text
                 Form2.nowis = Form1.texts.SelectionStart + Form1.texts.SelectionLength
+                a = 0
             Else
                 MsgBox("没有查找到""" + source.Text + """", 64, Form1.programname)
             End If
@@ -54,6 +56,7 @@
 
     Private Sub RepAll_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RepAll.Click
         form3abs = True
+        Form2.nowis = 1
         Do While True
             nextdothings(a)
             If a = 0 Then
