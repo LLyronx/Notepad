@@ -19,7 +19,6 @@
             Form1.texts.SelectionStart = nowis - 1 + seladded
             Form1.texts.SelectionLength = findstring.Length
             nowis = nowis + 1
-            Form1.Focus()
             realfinding = True
         End If
         Form1.savedfinding = FindBox.Text

@@ -22,15 +22,15 @@ Partial Class Form3
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.source = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.desc = New System.Windows.Forms.TextBox()
-        Me.Rep = New System.Windows.Forms.Button()
-        Me.FindNext = New System.Windows.Forms.Button()
-        Me.RepAll = New System.Windows.Forms.Button()
-        Me.CapGet = New System.Windows.Forms.CheckBox()
-        Me.Cancel = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.desc = New System.Windows.Forms.TextBox
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.source = New System.Windows.Forms.TextBox
+        Me.Rep = New System.Windows.Forms.Button
+        Me.FindNext = New System.Windows.Forms.Button
+        Me.RepAll = New System.Windows.Forms.Button
+        Me.CapGet = New System.Windows.Forms.CheckBox
+        Me.Cancel = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'Label1
@@ -42,12 +42,12 @@ Partial Class Form3
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "查找内容："
         '
-        'source
+        'desc
         '
-        Me.source.Location = New System.Drawing.Point(32, 49)
-        Me.source.Name = "source"
-        Me.source.Size = New System.Drawing.Size(237, 21)
-        Me.source.TabIndex = 1
+        Me.desc.Location = New System.Drawing.Point(32, 115)
+        Me.desc.Name = "desc"
+        Me.desc.Size = New System.Drawing.Size(237, 21)
+        Me.desc.TabIndex = 1
         '
         'Label2
         '
@@ -58,12 +58,12 @@ Partial Class Form3
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "替换为："
         '
-        'desc
+        'source
         '
-        Me.desc.Location = New System.Drawing.Point(32, 122)
-        Me.desc.Name = "desc"
-        Me.desc.Size = New System.Drawing.Size(237, 21)
-        Me.desc.TabIndex = 1
+        Me.source.Location = New System.Drawing.Point(32, 49)
+        Me.source.Name = "source"
+        Me.source.Size = New System.Drawing.Size(237, 21)
+        Me.source.TabIndex = 1
         '
         'Rep
         '
@@ -122,8 +122,8 @@ Partial Class Form3
         Me.Controls.Add(Me.FindNext)
         Me.Controls.Add(Me.RepAll)
         Me.Controls.Add(Me.Rep)
-        Me.Controls.Add(Me.desc)
         Me.Controls.Add(Me.source)
+        Me.Controls.Add(Me.desc)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.Coral
@@ -137,9 +137,9 @@ Partial Class Form3
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents source As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents desc As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents source As System.Windows.Forms.TextBox
     Friend WithEvents Rep As System.Windows.Forms.Button
     Friend WithEvents FindNext As System.Windows.Forms.Button
     Friend WithEvents RepAll As System.Windows.Forms.Button

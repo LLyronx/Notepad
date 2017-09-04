@@ -23,48 +23,48 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.ControlPanel = New System.Windows.Forms.MenuStrip()
-        Me.文件ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OtherSaveItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.PrintItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ExitItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UndoItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CutItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CopyItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PasteItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.FindItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FindNextItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReplaceItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GotoItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SelectAllItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DateItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.格式ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AutoWrapItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FontItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.WatchMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StateItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.帮助ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator()
-        Me.AboutItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.texts = New System.Windows.Forms.TextBox()
-        Me.StatusList = New System.Windows.Forms.StatusStrip()
-        Me.Blank = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.FontDialog = New System.Windows.Forms.FontDialog()
-        Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog()
-        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
-        Me.PrintDialog = New System.Windows.Forms.PrintDialog()
-        Me.PrintDocument = New System.Drawing.Printing.PrintDocument()
+        Me.ControlPanel = New System.Windows.Forms.MenuStrip
+        Me.文件ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.NewItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.OpenItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.SaveItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.OtherSaveItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator
+        Me.PrintItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripSeparator
+        Me.ExitItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.EditMenu = New System.Windows.Forms.ToolStripMenuItem
+        Me.UndoItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripSeparator
+        Me.CutItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.CopyItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PasteItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.DeleteItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripSeparator
+        Me.FindItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.FindNextItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ReplaceItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.GotoItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripSeparator
+        Me.SelectAllItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.DateItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.格式ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.AutoWrapItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.FontItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.WatchMenu = New System.Windows.Forms.ToolStripMenuItem
+        Me.StateItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.帮助ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.HelpItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripSeparator
+        Me.AboutItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.texts = New System.Windows.Forms.TextBox
+        Me.StatusList = New System.Windows.Forms.StatusStrip
+        Me.Blank = New System.Windows.Forms.ToolStripStatusLabel
+        Me.FontDialog = New System.Windows.Forms.FontDialog
+        Me.SaveFileDialog = New System.Windows.Forms.SaveFileDialog
+        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog
+        Me.PrintDialog = New System.Windows.Forms.PrintDialog
+        Me.PrintDocument = New System.Drawing.Printing.PrintDocument
         Me.ControlPanel.SuspendLayout()
         Me.StatusList.SuspendLayout()
         Me.SuspendLayout()
@@ -74,7 +74,7 @@ Partial Class Form1
         Me.ControlPanel.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.文件ToolStripMenuItem, Me.EditMenu, Me.格式ToolStripMenuItem, Me.WatchMenu, Me.帮助ToolStripMenuItem})
         Me.ControlPanel.Location = New System.Drawing.Point(0, 0)
         Me.ControlPanel.Name = "ControlPanel"
-        Me.ControlPanel.Size = New System.Drawing.Size(391, 25)
+        Me.ControlPanel.Size = New System.Drawing.Size(391, 24)
         Me.ControlPanel.TabIndex = 0
         Me.ControlPanel.Text = "MenuStrip1"
         '
@@ -82,199 +82,199 @@ Partial Class Form1
         '
         Me.文件ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewItem, Me.OpenItem, Me.SaveItem, Me.OtherSaveItem, Me.ToolStripMenuItem1, Me.PrintItem, Me.ToolStripMenuItem2, Me.ExitItem})
         Me.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem"
-        Me.文件ToolStripMenuItem.Size = New System.Drawing.Size(58, 21)
+        Me.文件ToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.文件ToolStripMenuItem.Text = "文件(&F)"
         '
         'NewItem
         '
         Me.NewItem.Name = "NewItem"
-        Me.NewItem.Size = New System.Drawing.Size(152, 22)
+        Me.NewItem.Size = New System.Drawing.Size(142, 22)
         Me.NewItem.Text = "新建(&N)"
         '
         'OpenItem
         '
         Me.OpenItem.Name = "OpenItem"
-        Me.OpenItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenItem.Size = New System.Drawing.Size(142, 22)
         Me.OpenItem.Text = "打开(&O)..."
         '
         'SaveItem
         '
         Me.SaveItem.Name = "SaveItem"
-        Me.SaveItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveItem.Size = New System.Drawing.Size(142, 22)
         Me.SaveItem.Text = "保存(&S)"
         '
         'OtherSaveItem
         '
         Me.OtherSaveItem.Name = "OtherSaveItem"
-        Me.OtherSaveItem.Size = New System.Drawing.Size(152, 22)
+        Me.OtherSaveItem.Size = New System.Drawing.Size(142, 22)
         Me.OtherSaveItem.Text = "另存为(&A)..."
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(139, 6)
         '
         'PrintItem
         '
         Me.PrintItem.Name = "PrintItem"
-        Me.PrintItem.Size = New System.Drawing.Size(152, 22)
+        Me.PrintItem.Size = New System.Drawing.Size(142, 22)
         Me.PrintItem.Text = "打印(&P)..."
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(139, 6)
         '
         'ExitItem
         '
         Me.ExitItem.Name = "ExitItem"
-        Me.ExitItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitItem.Size = New System.Drawing.Size(142, 22)
         Me.ExitItem.Text = "退出(&X)"
         '
         'EditMenu
         '
         Me.EditMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UndoItem, Me.ToolStripMenuItem3, Me.CutItem, Me.CopyItem, Me.PasteItem, Me.DeleteItem, Me.ToolStripMenuItem4, Me.FindItem, Me.FindNextItem, Me.ReplaceItem, Me.GotoItem, Me.ToolStripMenuItem5, Me.SelectAllItem, Me.DateItem})
         Me.EditMenu.Name = "EditMenu"
-        Me.EditMenu.Size = New System.Drawing.Size(59, 21)
+        Me.EditMenu.Size = New System.Drawing.Size(59, 20)
         Me.EditMenu.Text = "编辑(&E)"
         '
         'UndoItem
         '
         Me.UndoItem.Name = "UndoItem"
-        Me.UndoItem.Size = New System.Drawing.Size(154, 22)
+        Me.UndoItem.Size = New System.Drawing.Size(148, 22)
         Me.UndoItem.Text = "撤销(&U)"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(151, 6)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(145, 6)
         '
         'CutItem
         '
         Me.CutItem.Name = "CutItem"
-        Me.CutItem.Size = New System.Drawing.Size(154, 22)
+        Me.CutItem.Size = New System.Drawing.Size(148, 22)
         Me.CutItem.Text = "剪切(&T)"
         '
         'CopyItem
         '
         Me.CopyItem.Name = "CopyItem"
-        Me.CopyItem.Size = New System.Drawing.Size(154, 22)
+        Me.CopyItem.Size = New System.Drawing.Size(148, 22)
         Me.CopyItem.Text = "复制(&C)"
         '
         'PasteItem
         '
         Me.PasteItem.Name = "PasteItem"
-        Me.PasteItem.Size = New System.Drawing.Size(154, 22)
+        Me.PasteItem.Size = New System.Drawing.Size(148, 22)
         Me.PasteItem.Text = "粘贴(&P)"
         '
         'DeleteItem
         '
         Me.DeleteItem.Name = "DeleteItem"
-        Me.DeleteItem.Size = New System.Drawing.Size(154, 22)
+        Me.DeleteItem.Size = New System.Drawing.Size(148, 22)
         Me.DeleteItem.Text = "删除(&L)"
         '
         'ToolStripMenuItem4
         '
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(151, 6)
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(145, 6)
         '
         'FindItem
         '
         Me.FindItem.Name = "FindItem"
-        Me.FindItem.Size = New System.Drawing.Size(154, 22)
+        Me.FindItem.Size = New System.Drawing.Size(148, 22)
         Me.FindItem.Text = "查找(&F)..."
         '
         'FindNextItem
         '
         Me.FindNextItem.Name = "FindNextItem"
-        Me.FindNextItem.Size = New System.Drawing.Size(154, 22)
+        Me.FindNextItem.Size = New System.Drawing.Size(148, 22)
         Me.FindNextItem.Text = "查找下一个(&N)"
         '
         'ReplaceItem
         '
         Me.ReplaceItem.Name = "ReplaceItem"
-        Me.ReplaceItem.Size = New System.Drawing.Size(154, 22)
+        Me.ReplaceItem.Size = New System.Drawing.Size(148, 22)
         Me.ReplaceItem.Text = "替换(&R)..."
         '
         'GotoItem
         '
         Me.GotoItem.Name = "GotoItem"
-        Me.GotoItem.Size = New System.Drawing.Size(154, 22)
+        Me.GotoItem.Size = New System.Drawing.Size(148, 22)
         Me.GotoItem.Text = "转到(&G)..."
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(151, 6)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(145, 6)
         '
         'SelectAllItem
         '
         Me.SelectAllItem.Name = "SelectAllItem"
-        Me.SelectAllItem.Size = New System.Drawing.Size(154, 22)
+        Me.SelectAllItem.Size = New System.Drawing.Size(148, 22)
         Me.SelectAllItem.Text = "全选(&A)"
         '
         'DateItem
         '
         Me.DateItem.Name = "DateItem"
-        Me.DateItem.Size = New System.Drawing.Size(154, 22)
+        Me.DateItem.Size = New System.Drawing.Size(148, 22)
         Me.DateItem.Text = "时间/日期(&D)"
         '
         '格式ToolStripMenuItem
         '
         Me.格式ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AutoWrapItem, Me.FontItem})
         Me.格式ToolStripMenuItem.Name = "格式ToolStripMenuItem"
-        Me.格式ToolStripMenuItem.Size = New System.Drawing.Size(62, 21)
+        Me.格式ToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.格式ToolStripMenuItem.Text = "格式(&O)"
         '
         'AutoWrapItem
         '
         Me.AutoWrapItem.CheckOnClick = True
         Me.AutoWrapItem.Name = "AutoWrapItem"
-        Me.AutoWrapItem.Size = New System.Drawing.Size(152, 22)
+        Me.AutoWrapItem.Size = New System.Drawing.Size(136, 22)
         Me.AutoWrapItem.Text = "自动换行(&W)"
         '
         'FontItem
         '
         Me.FontItem.Name = "FontItem"
-        Me.FontItem.Size = New System.Drawing.Size(152, 22)
+        Me.FontItem.Size = New System.Drawing.Size(136, 22)
         Me.FontItem.Text = "字体(&F)..."
         '
         'WatchMenu
         '
         Me.WatchMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StateItem})
         Me.WatchMenu.Name = "WatchMenu"
-        Me.WatchMenu.Size = New System.Drawing.Size(60, 21)
+        Me.WatchMenu.Size = New System.Drawing.Size(59, 20)
         Me.WatchMenu.Text = "查看(&V)"
         '
         'StateItem
         '
         Me.StateItem.CheckOnClick = True
         Me.StateItem.Name = "StateItem"
-        Me.StateItem.Size = New System.Drawing.Size(128, 22)
+        Me.StateItem.Size = New System.Drawing.Size(152, 22)
         Me.StateItem.Text = "状态栏(&V)"
         '
         '帮助ToolStripMenuItem
         '
         Me.帮助ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.HelpItem, Me.ToolStripMenuItem6, Me.AboutItem})
         Me.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem"
-        Me.帮助ToolStripMenuItem.Size = New System.Drawing.Size(61, 21)
+        Me.帮助ToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
         Me.帮助ToolStripMenuItem.Text = "帮助(&H)"
         '
         'HelpItem
         '
         Me.HelpItem.Name = "HelpItem"
-        Me.HelpItem.Size = New System.Drawing.Size(152, 22)
+        Me.HelpItem.Size = New System.Drawing.Size(148, 22)
         Me.HelpItem.Text = "查看帮助(&H)"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(145, 6)
         '
         'AboutItem
         '
         Me.AboutItem.Name = "AboutItem"
-        Me.AboutItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutItem.Size = New System.Drawing.Size(148, 22)
         Me.AboutItem.Text = "关于记事本(&A)"
         '
         'texts
@@ -299,7 +299,7 @@ Partial Class Form1
         'Blank
         '
         Me.Blank.Name = "Blank"
-        Me.Blank.Size = New System.Drawing.Size(192, 17)
+        Me.Blank.Size = New System.Drawing.Size(281, 17)
         Me.Blank.Text = "                                              "
         '
         'OpenFileDialog

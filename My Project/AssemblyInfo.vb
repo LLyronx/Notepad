@@ -10,15 +10,15 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Notepad")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
+<Assembly: AssemblyCompany("LQ")> 
 <Assembly: AssemblyProduct("Notepad")> 
-<Assembly: AssemblyCopyright("Copyright © Microsoft 2017")> 
+<Assembly: AssemblyCopyright("Copyright © LQ 2017")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 '如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-<Assembly: Guid("808f00f5-0eab-4b4f-a6bd-b6bb7310b956")> 
+<Assembly: Guid("8ff30f86-f7d3-48f6-8389-975cad4c60b7")> 
 
 ' 程序集的版本信息由下面四个值组成:
 '

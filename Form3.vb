@@ -1,5 +1,6 @@
 ﻿Public Class Form3
     Dim a As Integer = 0
+    Public form3abs = False
     Public Sub New()
 
         ' 此调用是 Windows 窗体设计器所必需的。
@@ -52,13 +53,15 @@
     End Sub
 
     Private Sub RepAll_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RepAll.Click
+        form3abs = True
         Do While True
             nextdothings(a)
             If a = 0 Then
                 Exit Do
             End If
             Form1.texts.SelectedText = desc.Text
-            Form2.nowis = Form1.texts.SelectionStart + Form1.texts.SelectionLength
+            Form2.nowis += (Len(desc.Text) - 1)
         Loop
+        form3abs = False
     End Sub
 End Class

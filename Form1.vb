@@ -16,12 +16,16 @@
 
     Dim nowfont As Font
 
-    Private Sub TextboxRepaint()
+    Private Sub updatestatuslist()
+        If StateItem.Checked = True Then
+            StatusList.Visible = True
+            updistance = 87
+        Else
+            StatusList.Visible = False
+            updistance = 65
+        End If
         texts.Width = Me.Width - leftdistance
         texts.Height = Me.Height - updistance
-    End Sub
-
-    Private Sub updatestatuslist()
         Blank.Text = "第" + Str(texts.GetLineFromCharIndex(texts.GetFirstCharIndexOfCurrentLine()) + 1) + " 行，第" + Str(texts.SelectionStart - texts.GetFirstCharIndexOfCurrentLine() + 1) + " 列"
     End Sub
 
@@ -56,6 +60,7 @@
             StateItem.Enabled = True
         Else
             StateItem.Enabled = False
+            StateItem.Checked = False
         End If
     End Sub
 
@@ -89,7 +94,6 @@
         neverSaved = False
         hasSaved = True
         updateall()
-
     End Sub
     Private Sub openfile()
         Dim filenum As Integer = FreeFile()
@@ -133,7 +137,8 @@
     End Sub
 
     Private Sub Form1_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
-        TextboxRepaint()
+        texts.Width = Me.Width - leftdistance
+        texts.Height = Me.Height - updistance
     End Sub
 
     Private Sub texts_KeyDown(sender As Object, e As KeyEventArgs) Handles texts.KeyDown
@@ -151,7 +156,9 @@
 
     Private Sub texts_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles texts.TextChanged
         hasSaved = False
-        Form2.nowis = 1
+        If Form3.form3abs = False Then
+            Form2.nowis = 1
+        End If
         Dim nowstate As Integer
         If Len(texts.Text) - Len(lastdo) > 0 Then
             nowstate = 1
@@ -325,6 +332,7 @@
         Else
             texts.WordWrap = False
         End If
+        updateall()
     End Sub
 
     Private Sub FontItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FontItem.Click
@@ -334,17 +342,11 @@
     End Sub
 
     '下面是“查看”菜单的各项
-    Private Sub StateItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StateItem.Click
-        If StateItem.Checked = True Then
-            StatusList.Visible = True
-            updatestatuslist()
-            updistance = 87
-        Else
-            StatusList.Visible = False
-            updistance = 65
-        End If
-        TextboxRepaint()
+
+    Private Sub StateItem_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles StateItem.Click
+        updateall()
     End Sub
+
     '下面是“帮助”菜单的各项
     Private Sub HelpItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HelpItem.Click
         MsgBox("记事本的特点是只支持纯文本。一般来说，如果把文本从网页复制并粘贴到一个文字处理软件，它的格式和嵌入的媒体将会被一起粘贴并且难以去除。但是，如果将这样一个文本先粘贴到记事本中，然后从记事本中再次复制到下最终需要的软件里，记事本将会去除所有的格式，只留下纯文本，在某些情况下相当有用。记事本几乎可以编辑任何文件，但不包括Unix风格的文本文件。", 64, "记事本")
