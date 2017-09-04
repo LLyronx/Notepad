@@ -1,9 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Notepad", "Notepad.vbproj", "{57ABFF29-64A3-42FE-9F3C-37E425BFDEB2}"
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Notepad", "Notepad\Notepad.vbproj", "{772D9251-4ABF-4344-90DD-5C6CC1FCAEEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{57ABFF29-64A3-42FE-9F3C-37E425BFDEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{57ABFF29-64A3-42FE-9F3C-37E425BFDEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{57ABFF29-64A3-42FE-9F3C-37E425BFDEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{57ABFF29-64A3-42FE-9F3C-37E425BFDEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772D9251-4ABF-4344-90DD-5C6CC1FCAEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772D9251-4ABF-4344-90DD-5C6CC1FCAEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772D9251-4ABF-4344-90DD-5C6CC1FCAEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772D9251-4ABF-4344-90DD-5C6CC1FCAEEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

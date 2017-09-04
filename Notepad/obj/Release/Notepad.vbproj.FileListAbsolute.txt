@@ -1,0 +1,13 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\bin\Release\Notepad.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\bin\Release\Notepad.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\bin\Release\Notepad.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.About.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.Form1.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.Form2.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.Form3.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.xml
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2008\Projects\Notepad\Notepad\obj\Release\Notepad.pdb
