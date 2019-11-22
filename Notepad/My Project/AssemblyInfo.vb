@@ -9,16 +9,16 @@ Imports System.Runtime.InteropServices
 ' 查看程序集属性的值
 
 <Assembly: AssemblyTitle("Notepad")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("LQ")> 
-<Assembly: AssemblyProduct("Notepad")> 
-<Assembly: AssemblyCopyright("Copyright © LQ 2017")> 
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("LLyronx")>
+<Assembly: AssemblyProduct("Notepad")>
+<Assembly: AssemblyCopyright("Copyright © LLyronx 2009")>
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
 
 '如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-<Assembly: Guid("8ff30f86-f7d3-48f6-8389-975cad4c60b7")> 
+<Assembly: Guid("8ff30f86-f7d3-48f6-8389-975cad4c60b7")>
 
 ' 程序集的版本信息由下面四个值组成:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' 方法是按如下所示使用“*”:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.1.4.0")>
+<Assembly: AssemblyFileVersion("1.1.4.0")>

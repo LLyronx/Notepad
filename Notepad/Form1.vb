@@ -71,7 +71,7 @@
             If neverSaved = True Then
                 If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
                     filename = SaveFileDialog.FileName
-                    filetitle = split(filename, "\")(Ubound(split(filename, "\")))
+                    filetitle = Split(filename, "\")(UBound(Split(filename, "\")))
                     savefile()
                 Else
                     Return False
@@ -122,6 +122,14 @@
 
         updateall()
 
+    End Sub
+
+    Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        If hasSaved = False Then
+            If AskIfSave() = False Then
+                e.Cancel = True
+            End If
+        End If
     End Sub
 
     Private Sub Form1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Me.KeyPress
@@ -198,12 +206,12 @@
             If hasSaved = False Then
                 If (AskIfSave() = True) Then
                     filename = OpenFileDialog.FileName
-                    filetitle = split(filename, "\")(Ubound(split(filename, "\")))
+                    filetitle = Split(filename, "\")(UBound(Split(filename, "\")))
                     openfile()
                 End If
             Else
                 filename = OpenFileDialog.FileName
-                filetitle = split(filename, "\")(Ubound(split(filename, "\")))
+                filetitle = Split(filename, "\")(UBound(Split(filename, "\")))
                 openfile()
             End If
         End If
@@ -213,7 +221,7 @@
         If neverSaved = True Then
             If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
                 filename = SaveFileDialog.FileName
-                filetitle = split(filename, "\")(Ubound(split(filename, "\")))
+                filetitle = Split(filename, "\")(UBound(Split(filename, "\")))
                 savefile()
             End If
         Else
@@ -224,16 +232,17 @@
     Private Sub OtherSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OtherSaveItem.Click
         If SaveFileDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
             filename = SaveFileDialog.FileName
-            filetitle = split(filename, "\")(Ubound(split(filename, "\")))
+            filetitle = Split(filename, "\")(UBound(Split(filename, "\")))
             savefile()
         End If
     End Sub
 
     Private Sub PrintItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PrintItem.Click
-        PrintDialog.ShowDialog()
-        PrintDocument.PrinterSettings = PrintDialog.PrinterSettings
-        PrintDocument.DocumentName = filename
-        PrintDocument.Print()
+        If PrintDialog.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            PrintDocument.PrinterSettings = PrintDialog.PrinterSettings
+            PrintDocument.DocumentName = filename
+            PrintDocument.Print()
+        End If
     End Sub
 
     Private Sub PrintDocument_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument.PrintPage
@@ -268,7 +277,7 @@
     End Sub
 
     Private Sub CopyItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CopyItem.Click
-        Clipboard.Clear 
+        Clipboard.Clear()
         Clipboard.SetText(texts.SelectedText)
     End Sub
 

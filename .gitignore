@@ -1,0 +1,5 @@
+Notepad/obj
+!Notepad/obj/.gitkeep
+Notepad/bin
+!Notepad/bin/.gitkeep
+.vs/
